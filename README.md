@@ -3,7 +3,9 @@ SDI video signal transcoder
 
 
 sudo apt install ffmpeg
+
 v4l2-ctl --list-devices
+
 ffmpeg -f v4l2 -i /dev/video2 -t 10 ordinace.mkv
 
 rm /home/fedurca/out_test.mp4; 
